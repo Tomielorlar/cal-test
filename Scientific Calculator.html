@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calculator.css">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="screen"  placeholder="0" readonly>
+        </div>
+        <div class="keys">
+        <div>
+            <p>
+            <input type="button" class="btn btn-sign" value="sin" onclick="sin()">
+            <input type="button" class="btn btn-sign" value="cos" onclick="cos()">
+            <input type="button" class="btn btn-sign" value="tan" onclick="tan()">
+            <input type="button" class="btn btn-sign" value="asin" onclick="asin()">
+            <input type="button" class="btn btn-sign" value="acos" onclick="acos()">
+            </p>
+        </div>
+        <div>
+            <p>
+            <input type="button" class="btn btn-sign" value="atan" onclick="atan()">
+            <input type="button" class="btn btn-sign" value="π" onclick="keyPress(22/7)">
+            <input type="button" class="btn btn-sign" value="√" onclick="square_root()">
+            <input type="button" class="btn btn-sign" value="(" onclick="keyPress('(')">
+            <input type="button" class="btn btn-sign" value=")" onclick="keyPress(')')">
+            </p>
+        </div>
+        <div>
+            <p style="margin-top: 30px;">
+            <input type="button" class="btn btn-num" value="7" onclick="keyPress(7)">
+            <input type="button" class="btn btn-num" value="8" onclick="keyPress(8)">
+            <input type="button" class="btn btn-num" value="9" onclick="keyPress(9)">
+            <input type="button" class="btn btn-red" value="DE" onclick="backspace()">
+            <input type="button" class="btn btn-red" value="CL" onclick="toClearScreen('')">
+            </p>
+        </div>    
+        <div>
+            <p>
+            <input type="button" class="btn btn-num" value="4" onclick="keyPress(4)">
+            <input type="button" class="btn btn-num" value="5" onclick="keyPress(5)">
+            <input type="button" class="btn btn-num" value="6" onclick="keyPress(6)">
+            <input type="button" class="btn btn-opera" value="X" onclick="keyPress('*')">
+            <input type="button" class="btn btn-opera" value="/" onclick="keyPress('/')">
+            </p>
+        </div>
+        <div>
+            <p>
+            <input type="button" class="btn btn-num" value="1" onclick="keyPress(1)">
+            <input type="button" class="btn btn-num" value="2" onclick="keyPress(2)">
+            <input type="button" class="btn btn-num" value="3" onclick="keyPress(3)">
+            <input type="button" class="btn btn-opera" value="+" onclick="keyPress('+')">
+            <input type="button" class="btn btn-opera" value="-" onclick="keyPress('-')">
+            </p>
+        </div>
+        <div>
+            <p>
+            <input type="button" class="btn btn-num" value="." onclick="keyPress('.')">
+            <input type="button" class="btn btn-num" value="0" onclick="keyPress(0)">
+            <input type="button" class="btn btn-opera" value="%" onclick="percent()">
+            <input type="button" style="width:90px; border-radius: 20px; background: rgb(128, 107, 58)" class="btn btn-opera" value="=" onclick="equalTo()">
+            </p>
+        </div>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
